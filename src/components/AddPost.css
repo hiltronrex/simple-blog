@@ -9,7 +9,7 @@
 
 .add-post-title {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #DA291C;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -28,7 +28,7 @@
 
 .form-group label {
   font-weight: 600;
-  color: #2c3e50;
+  color: #DA291C;
   font-size: 1rem;
 }
 
@@ -43,7 +43,7 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #FFC72C;
 }
 
 textarea.form-input {
@@ -80,8 +80,8 @@ textarea.form-input {
 }
 
 .submit-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #DA291C;
+  color: #FFC72C;
 }
 
 .submit-button:hover {

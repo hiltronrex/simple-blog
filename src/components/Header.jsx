@@ -5,7 +5,7 @@ function Header({ onHomeClick }) {
     <header className="header">
       <div className="header-content">
         <h1 className="logo" onClick={onHomeClick} style={{ cursor: 'pointer' }}>
-          My Blog
+          Simon's Blog
         </h1>
         <nav className="nav">
           <a href="#" onClick={(e) => { e.preventDefault(); onHomeClick(); }}>Home</a>

@@ -61,7 +61,7 @@ function App() {
         )}
       </main>
       <footer className="footer">
-        <p>&copy; 2026 My Blog. Built with React.</p>
+        <p>&copy; 2026 Simon's Blog. Built with React.</p>
       </footer>
     </div>
   )
