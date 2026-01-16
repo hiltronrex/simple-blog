@@ -1,7 +1,7 @@
 import { neon } from '@neondatabase/serverless';
 
 export default async (req, context) => {
-  const sql = neon(process.env.DATABASE_URL);
+  const sql = neon(process.env.NETLIFY_DATABASE_URL || process.env.DATABASE_URL);
 
   try {
     const posts = await sql`

@@ -72,7 +72,7 @@ A modern blog application built with React and deployed on Netlify with Neon Pos
 
 3. Configure environment variables in Netlify:
    - Go to Site settings → Environment variables
-   - Add `DATABASE_URL` with your Neon connection string
+   - Add `NETLIFY_DATABASE_URL` with your Neon connection string
 
 4. Deploy! Netlify will automatically build and deploy your site.
 
@@ -80,7 +80,9 @@ A modern blog application built with React and deployed on Netlify with Neon Pos
 
 Set these in your Netlify dashboard:
 
-- `DATABASE_URL`: Your Neon PostgreSQL connection string
+- `NETLIFY_DATABASE_URL`: Your Neon PostgreSQL connection string
+
+For local development, use `DATABASE_URL` in your `.env` file (the functions will check both).
 
 ## Project Structure
 
