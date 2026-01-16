@@ -1,12 +1,16 @@
-import { blogPosts } from '../blogData'
 import './BlogList.css'
 
-function BlogList({ onSelectPost }) {
+function BlogList({ posts, onSelectPost, onAddPost }) {
   return (
     <div className="blog-list">
-      <h2 className="blog-list-title">Latest Posts</h2>
+      <div className="blog-list-header">
+        <h2 className="blog-list-title">Latest Posts</h2>
+        <button className="add-post-button" onClick={onAddPost}>
+          + New Post
+        </button>
+      </div>
       <div className="posts-grid">
-        {blogPosts.map((post) => (
+        {posts.map((post) => (
           <article key={post.id} className="post-card" onClick={() => onSelectPost(post)}>
             <h3 className="post-title">{post.title}</h3>
             <p className="post-date">{post.date}</p>
